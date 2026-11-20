@@ -1,0 +1,19 @@
+# Match the versions already verified with the OPSD implementation.
+# Install the local verl package alongside this file to resolve its base dependencies.
+torch==2.13.0+cu130
+transformers==5.12.1
+peft==0.19.1
+tensordict==0.10.0
+ray==2.55.1
+numpy==2.3.5
+pyarrow==24.0.0
+datasets==5.0.0
+pandas==3.0.3
+# Pin the retrieval versions that passed the real E5/FAISS HTTP-schema check.
+faiss-cpu==1.15.1
+fastapi==0.136.3
+uvicorn==0.54.0
+# Continuous-batch collection uses the same torch/transformers stack as training.
+vllm==0.29.0
+# Stream the full trajectory pool efficiently before GPU pair scoring.
+orjson==3.13.0

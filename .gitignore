@@ -1,0 +1,38 @@
+# Python 环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# 训练产物、日志与安装包
+/outputs/
+/logs/
+/cache/
+/wheels/
+wandb/
+checkpoints/
+*.whl
+
+# 模型权重
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# 本地密钥与配置
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+.DS_Store
+
+# Local helper environment and downloaded source archives
+/tools/modelscope-venv/
+/deps/*.tar.gz
